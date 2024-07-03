@@ -4,7 +4,8 @@ student = {
 }
 
 student["noten"].append(2)
+student["name"] = "Günter"
 
-print(student["name"] + " Noten: ")
+print(student["name"] + "'s Noten: ")
 print(student["noten"])
 

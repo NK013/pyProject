@@ -22,7 +22,7 @@ while True:
     elif operator is "*":
         res = num1 * num2
         sRes = str(res)
-        print(f"Deine Rechnung: {sNum1} * {sNum2}")
+        print(f"Deine Rechnung: {sNum1} • {sNum2}")
         print(f"Dein Ergebnis: {sRes}")
     elif operator is "/":
         res = num1 / num2
