@@ -1,20 +1,24 @@
-tries = 0
+from random import randint
 
-print("Tipp: Die Zahl ist zwischen 1 und 100!")
+tries = 0
+num = randint(1, 100)
+
+print("Guess the number between 1 and 100!")
 
 while True:
-    num = 47
-    guess = int(input("Your guess: "))
+    strGuess = input("Your guess: ").strip()
+    guess = int(strGuess)
 
-    if guess is num:
+    if not strGuess:
+        print("Invalid input!")
+
+    if guess == num:
         tries = tries + 1
         print("You won! (Tries: " + str(tries) + ")")
         break
     elif guess < num:
-        print("You guessed number is too low!")
+        print("Your guessed number is too low!")
         tries = tries + 1
     elif guess > num:
-        print("You guessed number is too high!")
+        print("Your guessed number is too high!")
         tries = tries + 1
-    else:
-        print("Error! Invalid guess!")
