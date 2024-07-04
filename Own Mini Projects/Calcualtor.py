@@ -9,22 +9,22 @@ while True:
 
     res = 0
 
-    if operator is "+":
+    if operator == "+":
         res = num1 + num2
         sRes = str(res)
         print(f"Deine Rechnung: {sNum1} + {sNum2}")
         print(f"Dein Ergebnis: {sRes}")
-    elif operator is "-":
+    elif operator == "-":
         es = num1 - num2
         sRes = str(res)
         print(f"Deine Rechnung: {sNum1} - {sNum2}")
         print(f"Dein Ergebnis: {sRes}")
-    elif operator is "*":
+    elif operator == "*":
         res = num1 * num2
         sRes = str(res)
         print(f"Deine Rechnung: {sNum1} • {sNum2}")
         print(f"Dein Ergebnis: {sRes}")
-    elif operator is "/":
+    elif operator == "/":
         res = num1 / num2
         sRes = str(res)
         print(f"Deine Rechnung: {sNum1} / {sNum2}")
